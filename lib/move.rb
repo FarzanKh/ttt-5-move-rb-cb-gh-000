@@ -6,13 +6,10 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
-
-def input_to_index(varfar)
-  index = varfar.to_i - 1
+def input_to_index(input)
+  input = index.to_i - 1
 end
 
-def move(board, index, token="X")
-  board[index] = token
-  board
+def move(board, index, user_marker = "X")
+  board[index.to_i] = user_marker
 end
